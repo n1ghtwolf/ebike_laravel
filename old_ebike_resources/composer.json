@@ -1,0 +1,7 @@
+{
+    "require": {
+        "components/jquery": "^3.4",
+        "twbs/bootstrap": "^4.4",
+        "colshrapnel/safemysql": "^1.1"
+    }
+}
