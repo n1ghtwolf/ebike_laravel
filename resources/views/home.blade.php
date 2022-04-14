@@ -8,7 +8,7 @@
 <div class="body">
     @include('partials.header')
 
-    @yield('content1')
+    @yield('content')
 
     @include('partials.footer')
 </div>
