@@ -23,8 +23,10 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
 
-    <!-- Demo CSS -->		<link href="{{asset('css/demo-landing.css')}}" rel="stylesheet">
-    <!-- Skin CSS -->		<link id="skinCSS" rel="stylesheet" href="{{asset('css/skin-landing.css')}}">
+    <!-- Demo CSS -->
+    <link href="{{asset('css/demo-landing.css')}}" rel="stylesheet">
 
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="{{asset('css/skin-landing.css')}}">
 
 </head>
