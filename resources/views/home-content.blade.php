@@ -2,6 +2,7 @@
 
 @section('content')
 <div role="main" class="main">
+
     <section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-image: url(img/landing/header_bg.jpg); background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;">
         <div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
         <div class="container pt-5 mt-5">
