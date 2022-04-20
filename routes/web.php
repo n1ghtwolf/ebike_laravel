@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/configurator', 'ConfiguratorController@index');
+Route::post('/configurator/submit', 'ConfiguratorController@submit')->name('configurator-form');
+
