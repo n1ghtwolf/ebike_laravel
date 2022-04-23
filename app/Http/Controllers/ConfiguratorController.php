@@ -15,6 +15,6 @@ class ConfiguratorController extends Controller
     }
     public function index()
     {
-        return view('configurator', ['products'=>Product::all()]);
+        return view('configurator', ['products' => Product::all()]);
     }
 }
