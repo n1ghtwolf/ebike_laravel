@@ -1,4 +1,4 @@
-<form method="POST" action="/configurator/submit">
+<form method="POST" action="{{ route('configurator.submit') }}">
     @csrf
     <select id="engine" name="engine" value="0">
     @foreach($products as $product)
