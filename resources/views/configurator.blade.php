@@ -40,7 +40,7 @@
 
 <script>
     let calc = $('#calc');
-    $('#engine,#display,#throttle,#battery').on('change',function (e){
+    $('#engine, #display, #throttle, #battery').on('change', function (e) {
         let calculated_price=0;
         $('option:selected').each(function (el,t){
             calculated_price+=parseInt($(this).attr('price'));
