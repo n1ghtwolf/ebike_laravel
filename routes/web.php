@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/configurator', 'ConfiguratorController@index');
-Route::get('/configurator/submit', 'ConfiguratorController@submit');
-Route::post('/configurator/submit', 'ConfiguratorController@submit');
+Route::group(['prefix' => '/configurator'], function () {
+    Route::get('/', 'ConfiguratorController@index');
+//    Route::get('/submit', 'ConfiguratorController@submit');
+    Route::post('/submit', 'ConfiguratorController@submit');
+});
+//Route::get('/configurator/submit', 'ConfiguratorController@submit');
 //Route::post('/configurator/submit', 'ConfiguratorController@submit')->name('configurator-form');
 
