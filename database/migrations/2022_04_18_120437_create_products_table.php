@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
 //            $table->integer('type');
 //            $table->foreign('type')->references('id')->on('products_type');
-            $table->foreignId('type')->nullable()->constrained('products_type');
+            $table->foreignId('type')->nullable()->constrained('product_types');
             $table->string('name',50);
             $table->string('description',255)->nullable();
             $table->string('img',255)->nullable();

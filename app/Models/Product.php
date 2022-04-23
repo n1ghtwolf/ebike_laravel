@@ -10,7 +10,4 @@ class Product extends Model
     use HasFactory;
     public $products;
 
-    public function getAll(){
-       return DB::table('products')->get();
-    }
 }
