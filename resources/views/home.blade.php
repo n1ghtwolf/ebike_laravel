@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-style-switcher-options="{'colorPrimary': '#0088cc', 'colorSecondary': '#0169fe', 'colorTertiary': '#005AEF', 'colorQuaternary': '#383f48'}" class="history svg video supports boxshadow csstransforms3d csstransitions backgroundcliptext webkit chrome win js sticky-header-enabled">
 
-@include('partials.head')
+@include('landing_partials.head')
 
 <body data-plugin-page-transition="">
 
 <div class="body">
-    @include('partials.header')
+    @include('landing_partials.header')
 
     @yield('content')
 
-    @include('partials.footer')
+    @include('landing_partials.footer')
 </div>
 
 {{--<a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="" data-toggle="tooltip" data-placement="right" title="" data-original-title="Style Switcher">--}}
@@ -21,7 +21,7 @@
 {{--    </div>--}}
 {{--</a>--}}
 
-@include('partials.footer-scripts')
+@include('landing_partials.footer-scripts')
 
 <a class="scroll-to-top hidden-mobile" href="#"><i class="fas fa-chevron-up"></i></a>
 

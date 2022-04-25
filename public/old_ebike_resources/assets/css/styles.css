@@ -1,0 +1,59 @@
+/* HIDE RADIO*/
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
+[type=radio] + span {
+    width: 40px;
+    height: 60px;
+    border: 2px;
+}
+[type=radio]:checked + span {
+    outline: 2px solid #f00;
+}
+/* HIDE CHECKBOX*/
+[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=checkbox] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=checkbox]:checked + img {
+    outline: 2px solid #f00;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.separator{
+    border:2px solid;
+    margin: 10px 0;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+a{
+    color: inherit!important;
+}
