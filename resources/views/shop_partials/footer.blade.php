@@ -1,18 +1,20 @@
-<footer id="footer" class="bg-color-dark-scale-2 border border-right-0 border-left-0 border-bottom-0 border-color-light-3 mt-0">
-    <div class="container text-center my-3 py-5">
-        <a href="#" class="goto-top">
-            <img src="img/lazy.png" data-src="img/landing/logo.png" width="102" height="45" class="appear-animation lazyload mb-4" alt="Porto" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-        </a>
-        <p class="text-4 mb-4">Porto is exclusively available on themeforest.net by <a href="https://themeforest.net/user/okler/" class="text-color-light" target="_blank">Okler.</a></p>
-        <ul class="social-icons social-icons-big social-icons-dark-2">
-            <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="social-icons-twitter"><a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-    </div>
-    <div class="copyright bg-dark py-4">
-        <div class="container text-center py-2">
-            <p class="mb-0 text-2">Copyright 2013 - 2021 - Porto - All Rights Reserved</p>
+<footer id="footer" class="footer-texts-more-lighten">
+    <div class="container">
+        <div class="footer-copyright footer-copyright-style-2 pt-4 pb-5">
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-12 col-md-auto text-center text-md-left mb-2 mb-md-0">
+                    <p class="mb-0">Kharkiv © 2022</p>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <div class="payment-cc justify-content-center justify-content-md-end">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
