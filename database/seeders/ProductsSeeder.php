@@ -66,5 +66,25 @@ class ProductsSeeder extends Seeder
             'type' => 5,
             'price' => 500,
         ]);
+        DB::table('products')->insert([
+            'name' => 'нет',
+            'type' => 11,
+            'price' => 10,
+        ]);
+        DB::table('products')->insert([
+            'name' => '26',
+            'type' => 11,
+            'price' => 10,
+        ]);
+        DB::table('products')->insert([
+            'name' => '27.5',
+            'type' => 11,
+            'price' => 10,
+        ]);
+        DB::table('products')->insert([
+            'name' => '28',
+            'type' => 11,
+            'price' => 10,
+        ]);
     }
 }

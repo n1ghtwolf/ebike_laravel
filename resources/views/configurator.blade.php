@@ -94,11 +94,8 @@
                                     <td class="align-middle text-2 px-0 py-2">Бренд:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
-                                            <select name="size" class="form-control text-1 h-auto py-2">
-                                                <option value="">PLEASE CHOOSE</option>
-                                                <option value="blue">Small</option>
-                                                <option value="red">Normal</option>
-                                                <option value="green">Big</option>
+                                            <select name="size" class="form-control text-1 h-auto py-2" disabled>
+                                                <option value="">BAFANG</option>
                                             </select>
                                         </div>
                                     </td>
@@ -107,11 +104,18 @@
                                     <td class="align-middle text-2 px-0 py-2">Тип:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
-                                            <select name="size" class="form-control text-1 h-auto py-2">
-                                                <option value="">PLEASE CHOOSE</option>
-                                                <option value="blue">Small</option>
-                                                <option value="red">Normal</option>
-                                                <option value="green">Big</option>
+                                            <select name="size" class="form-control text-1 h-auto py-2" disabled>
+                                                <option value="">Редукторное</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle text-2 px-0 py-2">Привод:</td>
+                                    <td class="px-0 py-2">
+                                        <div class="custom-select-1">
+                                            <select name="color" class="form-control text-1 h-auto py-2" disabled>
+                                                <option value="0">Задний под кассету</option>
                                             </select>
                                         </div>
                                     </td>
@@ -120,23 +124,39 @@
                                     <td class="align-middle text-2 px-0 py-2">Мощность:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
-                                            <select name="color" class="form-control text-1 h-auto py-2">
-                                                <option value="">PLEASE CHOOSE</option>
-                                                <option value="blue">Blue</option>
-                                                <option value="red">Red</option>
-                                                <option value="green">Green</option>
+                                            <select name="color" class="form-control text-1 h-auto py-2" disabled>
+                                                <option value="">500w</option>
                                             </select>
                                         </div>
                                     </td>
-                                </tr>  <tr>
+                                </tr>
+
+                                <tr>
                                     <td class="align-middle text-2 px-0 py-2">Дисплей:</td>
+                                    <td class="px-0 py-2">
+                                            <div class="form-check form-check-inline">
+                                                @foreach($products as $product)
+                                                    @if($product->type == 2)
+                                                <input class="form-check-input" type="radio" name="display" id="exampleRadios1" value="{{$product->id}}" checked="" price="{{$product->price}}">
+                                                <label class="form-check-label">
+                                                    {{$product->name}}
+                                                </label>
+                                                    @endif
+                                                @endforeach
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle text-2 px-0 py-2">Спицовка:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
                                             <select name="color" class="form-control text-1 h-auto py-2">
-                                                <option value="">PLEASE CHOOSE</option>
-                                                <option value="blue">Blue</option>
-                                                <option value="red">Red</option>
-                                                <option value="green">Green</option>
+                                                <option value="0">без спицовки</option>
+                                                @foreach($products as $product)
+                                                    @if($product->type == 11)
+                                                        <option value="{{$product->id}}" price="{{$product->price}}">{{$product->name}}</option>
+                                                    @endif
+                                                @endforeach
                                             </select>
                                         </div>
                                     </td>
@@ -145,28 +165,18 @@
                                     <td class="align-middle text-2 px-0 py-2">Аккумулятор:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
-                                            <select name="color" class="form-control text-1 h-auto py-2">
-                                                <option value="">PLEASE CHOOSE</option>
-                                                <option value="blue">Blue</option>
-                                                <option value="red">Red</option>
-                                                <option value="green">Green</option>
+                                            <select name="battery" class="form-control text-1 h-auto py-2">
+
+                                                @foreach($products as $product)
+                                                    @if($product->type == 5)
+                                                        <option value="{{$product->id}}" price="{{$product->price}}">{{$product->name}}</option>
+                                                    @endif
+                                                @endforeach
                                             </select>
                                         </div>
                                     </td>
                                 </tr><tr>
                                     <td class="align-middle text-2 px-0 py-2">Датчики тормоза:</td>
-                                    <td class="px-0 py-2">
-                                        <div class="custom-select-1">
-                                            <select name="color" class="form-control text-1 h-auto py-2">
-                                                <option value="">PLEASE CHOOSE</option>
-                                                <option value="blue">Blue</option>
-                                                <option value="red">Red</option>
-                                                <option value="green">Green</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                </tr><tr>
-                                    <td class="align-middle text-2 px-0 py-2">Аккумулятор:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
                                             <select name="color" class="form-control text-1 h-auto py-2">

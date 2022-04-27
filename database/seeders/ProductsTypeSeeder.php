@@ -17,7 +17,8 @@ class ProductsTypeSeeder extends Seeder
         'Narrow',
         'Light',
         'Chain tranquil',
-        'Installation Kit'
+        'Installation Kit',
+        'Axle'
     ];
     /**
      * Run the database seeds.
@@ -27,7 +28,7 @@ class ProductsTypeSeeder extends Seeder
     public function run()
     {
         foreach (self::$names as $name) {
-            DB::table('products_type')->insert([
+            DB::table('product_types')->insert([
                 'name' => $name
             ]);
         }
