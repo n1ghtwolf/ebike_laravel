@@ -68,28 +68,15 @@
                                         <a class="nav-link text-color-default text-color-hover-primary" href="#"
                                            role="button" id="dropdownCurrency" data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
-                                            USD
-                                            <i class="fas fa-angle-down"></i>
+                                            UAH
                                         </a>
-                                        <div class="dropdown-menu dropdown-menu-arrow-centered min-width-0"
-                                             aria-labelledby="dropdownCurrency">
-                                            <a class="dropdown-item" href="#">EUR</a>
-                                            <a class="dropdown-item" href="#">USD</a>
-                                        </div>
                                     </li>
                                     <li class="nav-item dropdown nav-item-right-border">
                                         <a class="nav-link text-color-default text-color-hover-primary" href="#"
                                            role="button" id="dropdownLanguage" data-toggle="dropdown"
                                            aria-haspopup="true" aria-expanded="false">
-                                            ENG
-                                            <i class="fas fa-angle-down"></i>
+                                            RU
                                         </a>
-                                        <div class="dropdown-menu dropdown-menu-arrow-centered min-width-0"
-                                             aria-labelledby="dropdownLanguage">
-                                            <a class="dropdown-item" href="#">ESP</a>
-                                            <a class="dropdown-item" href="#">FRA</a>
-                                            <a class="dropdown-item" href="#">ENG</a>
-                                        </div>
                                     </li>
                                 </ul>
 

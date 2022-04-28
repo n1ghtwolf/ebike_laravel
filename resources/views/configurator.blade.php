@@ -6,60 +6,56 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-5 mb-5 mb-md-0">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <img alt="" class="img-fluid" src="img/products/wheels/20191007_131026-removebg-preview-1000x1000.jpg">
 
-                    <div class="thumb-gallery-wrapper">
-                        <div class="thumb-gallery-detail owl-carousel owl-theme manual nav-inside nav-style-1 nav-dark mb-3">
-                            <div>
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7.jpg" data-zoom-image="img/products/product-grey-7.jpg">
-                            </div>
-                            <div>
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7-2.jpg" data-zoom-image="img/products/product-grey-7-2.jpg">
-                            </div>
-                            <div>
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7-3.jpg" data-zoom-image="img/products/product-grey-7-3.jpg">
-                            </div>
-                            <div>
-                                <img alt="" class="img-fluid" src="img/products/product-grey-8.jpg" data-zoom-image="img/products/product-grey-8.jpg">
-                            </div>
-                            <div>
-                                <img alt="" class="img-fluid" src="img/products/product-grey-6.jpg" data-zoom-image="img/products/product-grey-6.jpg">
-                            </div>
-                            <div>
-                                <img alt="" class="img-fluid" src="img/products/product-grey-5.jpg" data-zoom-image="img/products/product-grey-5.jpg">
-                            </div>
-                        </div>
-                        <div class="thumb-gallery-thumbs owl-carousel owl-theme manual thumb-gallery-thumbs">
-                            <div class="cur-pointer">
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7.jpg">
-                            </div>
-                            <div class="cur-pointer">
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7-2.jpg">
-                            </div>
-                            <div class="cur-pointer">
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7-3.jpg">
-                            </div>
-                            <div class="cur-pointer">
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7-4.jpg">
-                            </div>
-                            <div class="cur-pointer">
-                                <img alt="" class="img-fluid" src="img/products/product-grey-7-5.jpg">
-                            </div>
-                        </div>
-                    </div>
+{{--                    <div class="thumb-gallery-wrapper">--}}
+{{--                        <div class="thumb-gallery-detail owl-carousel owl-theme manual nav-inside nav-style-1 nav-dark mb-3">--}}
+{{--                            <div>--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7.jpg" data-zoom-image="img/products/product-grey-7.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div>--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7-2.jpg" data-zoom-image="img/products/product-grey-7-2.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div>--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7-3.jpg" data-zoom-image="img/products/product-grey-7-3.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div>--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-8.jpg" data-zoom-image="img/products/product-grey-8.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div>--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-6.jpg" data-zoom-image="img/products/product-grey-6.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div>--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-5.jpg" data-zoom-image="img/products/product-grey-5.jpg">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="thumb-gallery-thumbs owl-carousel owl-theme manual thumb-gallery-thumbs">--}}
+{{--                            <div class="cur-pointer">--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div class="cur-pointer">--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7-2.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div class="cur-pointer">--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7-3.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div class="cur-pointer">--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7-4.jpg">--}}
+{{--                            </div>--}}
+{{--                            <div class="cur-pointer">--}}
+{{--                                <img alt="" class="img-fluid" src="img/products/product-grey-7-5.jpg">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-md-6">
 
                     <div class="summary entry-summary position-relative">
 
-                        <div class="position-absolute top-0 right-0">
-                            <div class="products-navigation d-flex">
-                                <a href="#" class="prev text-decoration-none text-color-dark text-color-hover-primary border-color-hover-primary" data-tooltip data-original-title="Red Ladies Handbag"><i class="fas fa-chevron-left"></i></a>
-                                <a href="#" class="next text-decoration-none text-color-dark text-color-hover-primary border-color-hover-primary" data-tooltip data-original-title="Green Ladies Handbag"><i class="fas fa-chevron-right"></i></a>
-                            </div>
-                        </div>
+
 
                         <h1 class="mb-0 font-weight-bold text-7">Конфигуратор</h1>
 
@@ -206,7 +202,9 @@
                     <div id="description" class="tabs tabs-simple tabs-simple-full-width-line tabs-product tabs-dark mb-2">
                         <ul class="nav nav-tabs justify-content-start">
                             <li class="nav-item active"><a class="nav-link active font-weight-bold text-3 text-uppercase py-2 px-3" href="#productDescription" data-toggle="tab">Описание</a></li>
-                            <li class="nav-item"><a class="nav-link font-weight-bold text-3 text-uppercase py-2 px-3" href="#productInfo" data-toggle="tab">Технические характеристики</a></li>
+                            <li class="nav-item"><a class="nav-link font-weight-bold text-3 text-uppercase py-2 px-3" href="#productInfo" data-toggle="tab">Спецификация</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold text-3 text-uppercase py-2 px-3" href="#installReqiredments" data-toggle="tab">Параметры установки</a></li>
                         </ul>
                         <div class="tab-content p-0">
                             <div class="tab-pane px-0 py-3 active" id="productDescription">
@@ -218,30 +216,174 @@
                                     <tbody>
                                     <tr>
                                         <th class="border-top-0">
-                                            Size:
+                                            Размер колеса:
                                         </th>
                                         <td class="border-top-0">
-                                            Unique
+                                            20/26/700c/28
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            Мощность:
+                                        </th>
+                                        <td class="border-top-0">
+                                            500ват, до 1000 в пике
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            Тип привода::
+                                        </th>
+                                        <td class="border-top-0">
+                                            редукторный
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            Номинальное напряжение(DCV):
+                                        </th>
+                                        <td class="border-top-0">
+                                            48
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            n0(Rpm):
+                                        </th>
+                                        <td class="border-top-0">
+                                            310
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            Номинальная мощность:
+                                        </th>
+                                        <td class="border-top-0">
+                                            500w
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>
-                                            Colors
+                                            Контроллер
                                         </th>
                                         <td>
-                                            Red, Blue
+48v20a
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>
-                                            Material
+                                            Максимальный крутящий момент
                                         </th>
                                         <td>
-                                            100% Leather
+                                            65 N.m.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Максимальная эффективность:
+                                        </th>
+                                        <td>
+                                            до 80%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Цвет:
+                                        </th>
+                                        <td>
+                                            черный
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Вес:
+                                        </th>
+                                        <td>
+                                            4.5кг
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Уровень шума(dB):
+                                        </th>
+                                        <td>
+                                            до 55
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Рабочая температура:
+                                        </th>
+                                        <td>
+                                            -20 — 45 градусов С.
                                         </td>
                                     </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="tab-pane px-0 py-3" id="installReqiredments">
+                                <p>Присутствует крепление под диск для дискового тормоза.</p>
+                                <table class="table table-striped m-0">
+                                    <tbody>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            Ширина посадочного места:
+                                        </th>
+                                        <td class="border-top-0">
+                                            137 mm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Диаметр мотор колеса:
+                                        </th>
+                                        <td>
+                                           180
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Выход разъема:
+                                        </th>
+                                        <td>
+                                            через вал, с правой стороны.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина кабеля разьема и его тип:
+                                        </th>
+                                        <td>
+                                            250мм, G9,1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Необходимые спици:
+                                        </th>
+                                        <td>
+                                            36H*12G
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Влагозащита:
+                                        </th>
+                                        <td>
+                                            IP X5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Сертификация:
+                                        </th>
+                                        <td>
+                                            ROHS/CE
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
                             </div>
                                               </div>
                     </div>
