@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class ProductsTypeSeeder extends Seeder
 {
-    static $names = [
+    private static $names = [
         'Engine',
         'Display',
         'Throttle',
@@ -27,10 +27,10 @@ class ProductsTypeSeeder extends Seeder
      */
     public function run()
     {
-        foreach (self::$names as $name) {
-            DB::table('product_types')->insert([
-                'name' => $name
-            ]);
-        }
+        self::$names = array_map(function ($name) {
+            return ['name' => $name];
+        }, self::$names);
+
+        DB::table('product_types')->insert(self::$names);
     }
 }
