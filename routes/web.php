@@ -15,8 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
-Route::group(['prefix' => '/configurator'], function () {
-    Route::get('/', 'ConfiguratorController@index')->name('configurator.index');
-//    Route::post('/submit', 'ConfiguratorController@submit')->name('configurator.submit');
-    Route::post('/makeOrder', 'OrderController@makeOrder')->name('configurator.makeOrder');
-});
+include_once "configurator/configurator.router.php";
+include_once "order/order.router.php";

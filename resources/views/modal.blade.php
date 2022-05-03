@@ -9,7 +9,7 @@
             <div class="modal-body">
 
                 <form id="orderForm" class="mb-4" novalidate="novalidate"
-                      action="{{ route('configurator.makeOrder') }}">
+                      action="{{ route('order.create') }}">
                     @csrf
                     <div class="form-group row align-items-center">
                         <label class="col-sm-3 text-left text-sm-right mb-0">Номер телефона</label>
@@ -66,7 +66,7 @@
         let battery = $('#battery').val();
 
         $.ajax({
-            url: "configurator/makeOrder",
+            url: "{{ route('order.create') }}",
             type: "POST",
             data: {
                 "_token": "{{ csrf_token() }}",

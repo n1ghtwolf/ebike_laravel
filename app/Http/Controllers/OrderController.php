@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderPostRequest;
-use Illuminate\Http\Request;
 use App\Models\Orders;
+use JetBrains\PhpStorm\NoReturn;
 
 class OrderController extends Controller
 {
     public function __construct(
-        private        readonly OrderPostRequest $request,
+        private readonly OrderPostRequest $request,
         private Orders $orders
     )
     {
     }
 
-    public function makeOrder()
+    public #[NoReturn] function create(): void
     {
 //        $this->request->validated();
         echo '<pre>';
