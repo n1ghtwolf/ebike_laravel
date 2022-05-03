@@ -9,13 +9,13 @@ use JetBrains\PhpStorm\NoReturn;
 class OrderController extends Controller
 {
     public function __construct(
-        private readonly OrderPostRequest $request,
+        private OrderPostRequest $request,
         private Orders $orders
     )
     {
     }
 
-    public #[NoReturn] function create(): void
+    #[NoReturn] public function create(): void
     {
 //        $this->request->validated();
         echo '<pre>';
