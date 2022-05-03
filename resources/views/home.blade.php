@@ -9,7 +9,7 @@
     @include('shop_partials.header')
 
     @yield('content')
-
+    @include('modal')
     @include('shop_partials.footer')
 </div>
 

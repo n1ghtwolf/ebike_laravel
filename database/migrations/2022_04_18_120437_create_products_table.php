@@ -18,11 +18,13 @@ class CreateProductsTable extends Migration
 //            $table->integer('type');
 //            $table->foreign('type')->references('id')->on('products_type');
             $table->foreignId('type')->nullable()->constrained('product_types');
-            $table->string('name',50);
-            $table->string('description',255)->nullable();
-            $table->string('img',255)->nullable();
+            $table->string('name', 50);
+            $table->string('description', 255)->nullable();
+            $table->string('img', 255)->nullable();
             $table->float('price');
-            $table->enum('currency', array('USD','EUR','UAH'));
+            $table->enum('currency', array('USD', 'EUR', 'UAH'));
+            $table->integer('priority')->nullable();
+            $table->integer('available')->default(0);
             $table->timestamps();
         });
     }

@@ -17,5 +17,6 @@ Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => '/configurator'], function () {
     Route::get('/', 'ConfiguratorController@index')->name('configurator.index');
-    Route::post('/submit', 'ConfiguratorController@submit')->name('configurator.submit');
+//    Route::post('/submit', 'ConfiguratorController@submit')->name('configurator.submit');
+    Route::post('/makeOrder', 'OrderController@makeOrder')->name('configurator.makeOrder');
 });
