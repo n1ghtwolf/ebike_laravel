@@ -9,7 +9,7 @@ use JetBrains\PhpStorm\NoReturn;
 class OrderController extends Controller
 {
     public function __construct(
-        private readonly OrderPostRequest $request,
+        private OrderPostRequest $request,
         private Order $orders
     )
     {
