@@ -7,14 +7,12 @@ $.ajaxSetup({
 // const modal_id = $('#modal');
 function showDialog(route) {
     let modal_content = $('#modal_content');
-    modal_content.html('');
     modal_content.load(route);
     showModal();
 }
 function showModal(){
-    $('#modal').show();
-    $('#modal').addClass('show');
+    $('#modal').addClass('show').show(300);
 }
 function hideModal(){
-    $('#modal').removeClass('show');
+    $('#modal').removeClass('show').hide(600);
 }
