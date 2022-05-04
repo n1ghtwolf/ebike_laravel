@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class ProductsTypeSeeder extends Seeder
 {
-    private static $names = [
+    private static array $names = [
         'Engine',
         'Display',
         'Throttle',
