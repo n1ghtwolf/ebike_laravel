@@ -57,17 +57,22 @@
                                 <tr>
                                     <td class="align-middle text-2 px-0 py-2">Дисплей:</td>
                                     <td class="px-0 py-2">
-                                        <div class="form-check form-check-inline">
+                                        <div class="form-check pl-0">
                                             @foreach($products as $product)
                                                 @if($product->type_id == 2)
+
                                                     <input class="input_img" type="radio" name="display"
                                                            id="{{$product->name}}" value="{{$product->id}}"
-                                                           price="{{$product->price}}"/>
+                                                           price="{{$product->price}}" />
                                                     <label for="{{$product->name}}">
+                                                        <p class="del-cross">
                                                         <img
                                                             src="{{$product->img}}"
                                                             alt="{{$product->name}}" />
+
+                                                        </p>
                                                     </label>
+
                                                 @endif
                                             @endforeach
 
