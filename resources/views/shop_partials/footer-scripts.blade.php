@@ -5,6 +5,7 @@
 </a>        <!-- Vendor -->
 {{--<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>--}}
 <script src="js/jquery/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 <script src="js/jquery.appear/jquery.appear.min.js"></script>
 <script src="js/jquery.easing/jquery.easing.min.js"></script>
 <script src="js/jquery.cookie/jquery.cookie.min.js"></script>
