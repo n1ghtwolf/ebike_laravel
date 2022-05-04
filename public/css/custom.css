@@ -6,6 +6,9 @@ body {
     position: absolute;
     left: -9999px;
 }
+.input_img + label {
+    display: inline-flex;
+}
 
 input[type=radio]:checked + label img {
     border: 1px solid #fff;

@@ -63,13 +63,14 @@
 
                                                     <input class="input_img" type="radio" name="display"
                                                            id="{{$product->name}}" value="{{$product->id}}"
-                                                           price="{{$product->price}}" />
+                                                           price="{{$product->price}}"
+                                                           {{ $product->id === 3 ? 'disabled="disabled"' : '' }}
+                                                    />
                                                     <label for="{{$product->name}}">
                                                         <p class="del-cross">
-                                                        <img
-                                                            src="{{$product->img}}"
-                                                            alt="{{$product->name}}" />
-
+                                                            <img
+                                                                src="{{$product->img}}"
+                                                                alt="{{$product->name}}" width="100px" height="100px"/>
                                                         </p>
                                                     </label>
 
