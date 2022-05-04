@@ -1,4 +1,8 @@
-
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
 //  functions for modal dialog
 // const modal_id = $('#modal');
 function showDialog(route) {
