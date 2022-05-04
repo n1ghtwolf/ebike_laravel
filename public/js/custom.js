@@ -14,5 +14,5 @@ function showModal(){
     $('#modal').addClass('show').show(300);
 }
 function hideModal(){
-    $('#modal').removeClass('show').hide(600);
+    $('#modal').hide(300).removeClass('show');
 }
