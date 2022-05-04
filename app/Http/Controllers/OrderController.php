@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderPostRequest;
 use App\Models\Order;
+use Illuminate\Contracts\View\View;
 use JetBrains\PhpStorm\NoReturn;
 
 class OrderController extends Controller
@@ -14,7 +15,8 @@ class OrderController extends Controller
     )
     {
     }
-    public function index (){
+    public function index(): View
+    {
         return view('shop_partials.dia_make_order');
     }
     #[NoReturn] public function create(): void
