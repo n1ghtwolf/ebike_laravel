@@ -24,14 +24,15 @@ class OrderPostRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:15|',
+            'name' => 'required|max:25|',
             'email' => 'required|email',
-            'mobile_number' => 'required|regex:/^(\+36)[0-9]{9}$/',
+            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}|(38)[0-9]{10}|(8)[0-9]{10}|[0-9]{10}$/',
+//            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}$/',
             'message' => 'max:255',
-            'kit' => 'required|numeric|max:1',
-            'brakes' => 'required|numeric|max:1',
-            'rim' => 'required|numeric|max:1',
-            'battery' => 'required|numeric|max:1',
+            'kit' => 'required|numeric|max:3',
+            'brakes' => 'required|numeric|max:3',
+            'rim' => 'required|numeric|max:3',
+            'battery' => 'required|numeric|max:10',
         ];
     }
 
@@ -39,6 +40,9 @@ class OrderPostRequest extends FormRequest
     {
         return [
             'name.required' => 'Имя обязательно',
+            'email.required' => 'email обязателен',
+            'email.email' => 'не правильный формат email',
+            'mobile_number.regex' => 'Только украинские номера',
             'mobile_number.required' => 'Номер телефона обязательно'
         ];
     }

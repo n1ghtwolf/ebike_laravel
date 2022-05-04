@@ -116,8 +116,10 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <button type="button" data-toggle="modal" data-target="#Modal"
+                            <button type="button"
+                                    onclick="showDialog('{{route('order.show')}}')"
                                     class="btn btn-dark btn-modern text-uppercase bg-color-hover-primary border-color-hover-primary">
+
                                 Заказать
                             </button>
                             <hr>

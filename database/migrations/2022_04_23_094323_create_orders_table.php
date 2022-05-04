@@ -14,17 +14,18 @@ class CreateOrderTable extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->foreignId('kit_id')->nullable()->constrained('product');
-            $table->foreignId('display_id')->nullable()->constrained('product');
-            $table->foreignId('brakes_id')->nullable()->constrained('product');
-            $table->foreignId('battery_id')->nullable()->constrained('product');
-            $table->string('rim_size');
-            $table->string('mobile_number');
-            $table->string('name');
-            $table->string('email');
-            $table->string('message');
-            # order_status 0 - just open , 1 - confirmed , 2- in_progres, 4 - rejected , 5 - closed
-            $table->enum('order_status', [1, 2, 3, 4, 5]);
+            $table->id();
+            $table->foreignId('kit_id')->constrained('product');
+            $table->foreignId('display_id')->constrained('product');
+            $table->foreignId('brakes_id')->constrained('product');
+            $table->foreignId('battery_id')->constrained('product');
+            $table->string('rim_size',3);
+            $table->string('mobile_number',20);
+            $table->string('name',20);
+            $table->string('email',50);
+            $table->string('message',255);
+            # order_status 0 - just open , 1 - confirmed , 2- in_progress, 3 - rejected , 4 - closed
+            $table->enum('order_status', [0, 1, 2, 3, 4]);
         });
     }
 
