@@ -117,7 +117,7 @@
                                 </tbody>
                             </table>
                             <button type="button"
-                                    onclick="showDialog('{{route('order.show')}}')"
+                                    onclick="showDialog('{{route('order.confirm')}}')"
                                     class="btn btn-dark btn-modern text-uppercase bg-color-hover-primary border-color-hover-primary">
 
                                 Заказать
