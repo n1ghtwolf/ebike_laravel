@@ -59,15 +59,18 @@
                                     <td class="px-0 py-2">
                                         <div class="form-check form-check-inline">
                                             @foreach($products as $product)
-                                                @if($product->type == 2)
-                                                    <input class="form-check-input" type="radio" name="display"
-                                                           id="display" value="{{$product->id}}" checked=""
-                                                           price="{{$product->price}}">
-                                                    <label class="form-check-label">
-                                                        {{$product->name}}
+                                                @if($product->type_id == 2)
+                                                    <input class="input_img" type="radio" name="display"
+                                                           id="{{$product->name}}" value="{{$product->id}}"
+                                                           price="{{$product->price}}"/>
+                                                    <label for="{{$product->name}}">
+                                                        <img
+                                                            src="{{$product->img}}"
+                                                            alt="{{$product->name}}" />
                                                     </label>
                                                 @endif
                                             @endforeach
+
                                         </div>
                                     </td>
                                 </tr>
@@ -76,13 +79,10 @@
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
                                             <select name="rim" id="rim" class="form-control text-1 h-auto py-2">
-                                                <option value="0">без спицовки</option>
-                                                @foreach($products as $product)
-                                                    @if($product->type == 11)
-                                                        <option value="{{$product->id}}"
-                                                                price="{{$product->price}}">{{$product->name}}</option>
-                                                    @endif
-                                                @endforeach
+                                                <option value="0" disabled>без спицовки</option>
+                                                <option value="1" selected>26</option>
+                                                <option value="2">27.5</option>
+                                                <option value="4" disabled>28</option>
                                             </select>
                                         </div>
                                     </td>
@@ -94,7 +94,7 @@
                                             <select id="battery" name="battery" class="form-control text-1 h-auto py-2">
 
                                                 @foreach($products as $product)
-                                                    @if($product->type == 5)
+                                                    @if($product->type_id == 5)
                                                         <option value="{{$product->id}}"
                                                                 price="{{$product->price}}">{{$product->name}}</option>
                                                     @endif
