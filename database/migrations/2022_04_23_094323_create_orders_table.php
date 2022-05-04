@@ -25,7 +25,7 @@ class CreateOrderTable extends Migration
             $table->string('email',50);
             $table->string('message',255);
             # order_status 0 - just open , 1 - confirmed , 2- in_progress, 3 - rejected , 4 - closed
-            $table->enum('order_status', ['Заказ открыт, требует подтверждения','Подтверждено, в работе','Заказ отклонен',]);
+            $table->enum('order_status', ['Заказ открыт','Заказ в работе','Заказ отклонен','Заказ успешно завершен']);
         });
     }
 
