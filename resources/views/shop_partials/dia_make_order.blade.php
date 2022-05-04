@@ -28,13 +28,12 @@
             <div class="col-sm-9">
                 <textarea rows="5" id="message" class="form-control"
                           placeholder="Если у вас остались какие-либо вопросы по заказу напишите их здесь" required>
-
                 </textarea>
             </div>
         </div>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-light" data-dismiss="modal" onclick="hideModal()">Отмена</button>
         <button type="submit" class="btn btn-primary">Оформить заказ</button>
     </div>
 </form>
