@@ -8,17 +8,9 @@ use Illuminate\Support\Facades\DB;
 class ProductsTypeSeeder extends Seeder
 {
     private static array $names = [
-        'Engine',
-        'Display',
-        'Throttle',
-        'Brake sensors',
-        'Battery',
-        'Gear sensor',
-        'Narrow',
-        'Light',
-        'Chain tranquil',
-        'Installation Kit',
-        'Axle'
+        'kit',
+        'display',
+        'battery'
     ];
     /**
      * Run the database seeds.

@@ -64,7 +64,7 @@
                                                     <input class="input_img" type="radio" name="display"
                                                            id="{{$product->name}}" value="{{$product->id}}"
                                                            price="{{$product->price}}"
-                                                           {{ $product->id === 3 ? 'disabled="disabled"' : '' }}
+                                                           {{ $product->available === 0 ? 'disabled="disabled"' : '' }}
                                                     />
                                                     <label for="{{$product->name}}">
                                                         <p class="del-cross">
@@ -114,8 +114,8 @@
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
                                             <select name="brakes" id="brakes" class="form-control text-1 h-auto py-2">
-                                                <option value="1">под тросики</option>
-                                                <option value="2" disabled>под гидролинии</option>
+                                                <option value="тросики">под тросики</option>
+                                                <option value="гидролинии" disabled>под гидролинии</option>
                                             </select>
                                         </div>
                                     </td>
@@ -158,7 +158,9 @@
                         </ul>
                         <div class="tab-content p-0">
                             <div class="tab-pane px-0 py-3 active" id="productDescription">
-                                <p>replace Описание и преимущество электронаборов бафанг</p>
+                                <p>Bafang - это один из ведущих производителей компонентов для электротранспорта и систем электропривода, который разрабатывает решения для электротранспорта с 2003 года. Компания ориентируется на все глобальные тенденции электромобильности будущего: будь-то электровелосипеды, электроскутеры, в том числе, для велопроката.
+                                    <br>
+                                    Продукция Bafang отличается высочайшим качеством и максимальной универсальностью. Компания предлагает различные приводные системы для применения в различных областях, чтобы обеспечить пользователю наилучшие впечатления от вождения в любое время.</p>
                             </div>
                             <div class="tab-pane px-0 py-3" id="productInfo">
                                 <table class="table table-striped m-0">

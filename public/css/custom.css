@@ -1,7 +1,10 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
-/* img input */
+/*
+ img input
+ https://codepen.io/DavidBradbury/pen/DoWQLW
+*/
 .input_img {
     position: absolute;
     left: -9999px;

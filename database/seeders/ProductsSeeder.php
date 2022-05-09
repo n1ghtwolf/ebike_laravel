@@ -19,25 +19,48 @@ class ProductsSeeder extends Seeder
     {
         $products = [
             [
-                'name' => 'Мотор колесо 250w',
+                'name' => 'Передний 36v250w',
                 'type_id' => 1,
                 'price' => 75,
                 'img' => ''
             ],
             [
-                'name' => 'Мотор колесо 500w',
+                'name' => 'Передний 36v500w',
                 'type_id' => 1,
                 'price' => 100,
                 'img' => ''
             ],
             [
-                'name' => 'Мотор колесо 250w',
+                'name' => 'Задний 48v500w под кассету',
                 'type_id' => 1,
                 'price' => 50,
                 'img' => ''
             ],
             [
-                'name' => 'центральный мотор 500w',
+                'name' => 'Задний 48v500w под трещетку',
+                'type_id' => 1,
+                'price' => 250,
+                'img' => ''
+            ],
+            [
+                'name' => 'Кареточный 36\48v250w',
+                'type_id' => 1,
+                'price' => 250,
+                'img' => ''
+            ],   [
+                'name' => 'Кареточный 36\48v500w',
+                'type_id' => 1,
+                'price' => 250,
+                'img' => ''
+            ],
+            [
+                'name' => 'Кареточный 48v750w',
+                'type_id' => 1,
+                'price' => 250,
+                'img' => ''
+            ],
+            [
+                'name' => 'Кареточный 48v1000w',
                 'type_id' => 1,
                 'price' => 250,
                 'img' => ''
@@ -71,21 +94,16 @@ class ProductsSeeder extends Seeder
                 'price' => 150,
                 'img' => 'img/products/displays/dispdpc18-100x100.jpg'
             ],
-            [
-                'name' => 'Курок газа',
-                'type_id' => 3,
-                'price' => 15,
-                'img' => ''
-            ],
+
             [
                 'name' => 'батарея 500в',
-                'type_id' => 5,
+                'type_id' => 3,
                 'price' => 200,
                 'img' => ''
             ],
             [
                 'name' => 'батарея 750в',
-                'type_id' => 5,
+                'type_id' => 3,
                 'price' => 400,
                 'img' => ''
             ],
