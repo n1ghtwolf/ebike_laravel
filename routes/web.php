@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/about', 'inDevController@index');
+Route::get('/contacts', 'inDevController@index');
+Route::get('/delivery', 'inDevController@index');
 
 include_once "configurator/configurator.router.php";
 include_once "order/order.router.php";
