@@ -109,34 +109,34 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name' => 'батарея 950в',
-                'type_id' => 5,
+                'type_id' => 3,
                 'price' => 500,
                 'img' => ''
             ],
-            [
-                'name' => 'нет',
-                'type_id' => 11,
-                'price' => 10,
-                'img' => ''
-            ],
-            [
-                'name' => '26',
-                'type_id' => 11,
-                'price' => 10,
-                'img' => ''
-            ],
-            [
-                'name' => '27.5',
-                'type_id' => 11,
-                'price' => 10,
-                'img' => ''
-            ],
-            [
-                'name' => '28',
-                'type_id' => 11,
-                'price' => 10,
-                'img' => ''
-            ]
+//            [
+//                'name' => 'нет',
+//                'type_id' => 11,
+//                'price' => 10,
+//                'img' => ''
+//            ],
+//            [
+//                'name' => '26',
+//                'type_id' => 11,
+//                'price' => 10,
+//                'img' => ''
+//            ],
+//            [
+//                'name' => '27.5',
+//                'type_id' => 11,
+//                'price' => 10,
+//                'img' => ''
+//            ],
+//            [
+//                'name' => '28',
+//                'type_id' => 11,
+//                'price' => 10,
+//                'img' => ''
+//            ]
         ];
 
         Product::insert($products);
