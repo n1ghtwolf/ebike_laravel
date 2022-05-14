@@ -5,6 +5,8 @@
 						<span></span>
 					</span>
     </button>
+{{--    алерт сверху шапки сайта, для важных обьявлений, доделать --}}
+    @if (false)
     <div class="container">
         <div class="row justify-content-center py-2">
             <div class="col-9 col-md-12 text-center">
@@ -15,6 +17,7 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
 <header id="header"
         data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 135, 'stickySetTop': '-135px', 'stickyChangeLogo': true}">
@@ -40,26 +43,26 @@
                                             <i class="fas fa-angle-down"></i>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMobileMore">
-                                            <a class="dropdown-item" href="#">О Нас</a>
-                                            <a class="dropdown-item" href="#">Blog</a>
-                                            <a class="dropdown-item" href="#">Контакты</a>
-                                            <a class="dropdown-item" href="#">FAQ</a>
+                                            <a class="dropdown-item" href="{{route('about')}}">О Нас</a>
+                                            <a class="dropdown-item" href="{{route('blog')}}">Blog</a>
+                                            <a class="dropdown-item" href="{{route('contacts')}}">Контакты</a>
+                                            <a class="dropdown-item" href="{{route('faq')}}">FAQ</a>
                                         </div>
                                     </li>
                                     <li class="nav-item d-none d-lg-inline-block">
-                                        <a href="#"
+                                        <a href="{{route('about')}}"
                                            class="text-decoration-none text-color-default text-color-hover-primary">О Нас</a>
                                     </li>
                                     <li class="nav-item d-none d-lg-inline-block">
-                                        <a href="#"
+                                        <a href="{{route('blog')}}"
                                            class="text-decoration-none text-color-default text-color-hover-primary">Blog</a>
                                     </li>
                                     <li class="nav-item d-none d-lg-inline-block">
-                                        <a href="#"
+                                        <a href="{{route('contacts')}}"
                                            class="text-decoration-none text-color-default text-color-hover-primary">Контакты</a>
                                     </li>
                                     <li class="nav-item d-none d-xl-inline-block">
-                                        <a href="#"
+                                        <a href="{{route('faq')}}"
                                            class="text-decoration-none text-color-default text-color-hover-primary">Help
                                             & FAQs</a>
                                     </li>
@@ -91,7 +94,7 @@
                 <div class="header-column w-100">
                     <div class="header-row justify-content-between">
                         <div class="header-logo z-index-2 col-lg-2 px-0">
-                            <a href="index.html">
+                            <a href="{{route('home')}}">
                                 <img alt="Bafang" width="250" height="48" data-sticky-width="82" data-sticky-height="40"
                                      data-sticky-top="84" src="img/logo_bafang.png">
                             </a>

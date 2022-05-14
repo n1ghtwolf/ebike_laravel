@@ -21,7 +21,7 @@
                             <hr class="bg-color-grey-scale-4">
                         </div>
                         <p class="price mb-3">
-                            <span class="sale text-color-dark">$15,00</span>
+                            <span class="sale text-color-dark">11000 грн</span>
                             {{--                            скидка--}}
                             {{--                            <span class="amount">$22,00</span>--}}
                         </p>
@@ -97,14 +97,9 @@
                                     <td class="align-middle text-2 px-0 py-2">Аккумулятор:</td>
                                     <td class="px-0 py-2">
                                         <div class="custom-select-1">
-                                            <select id="battery" name="battery" class="form-control text-1 h-auto py-2">
+                                            <select id="battery" name="battery" class="form-control text-1 h-auto py-2" disabled>
 
-                                                @foreach($products as $product)
-                                                    @if($product->type_id == 5)
-                                                        <option value="{{$product->id}}"
-                                                                price="{{$product->price}}">{{$product->name}}</option>
-                                                    @endif
-                                                @endforeach
+                                               <option selected> не доступны </option>
                                             </select>
                                         </div>
                                     </td>
@@ -115,7 +110,7 @@
                                         <div class="custom-select-1">
                                             <select name="brakes" id="brakes" class="form-control text-1 h-auto py-2">
                                                 <option value="тросики">под тросики</option>
-                                                <option value="гидролинии" disabled>под гидролинии</option>
+                                                <option value="гидролинии">под гидролинии</option>
                                             </select>
                                         </div>
                                     </td>

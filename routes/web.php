@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('/about', 'inDevController@index');
-Route::get('/contacts', 'inDevController@index');
-Route::get('/delivery', 'inDevController@index');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/about', 'inDevController@index')->name('about');
+Route::get('/contacts', 'inDevController@index')->name('contacts');
+Route::get('/delivery', 'inDevController@index')->name('delivery');
+Route::get('/faq', 'inDevController@index')->name('faq');
+Route::get('/delivery', 'inDevController@index')->name('blog');
 
 include_once "configurator/configurator.router.php";
 include_once "order/order.router.php";
