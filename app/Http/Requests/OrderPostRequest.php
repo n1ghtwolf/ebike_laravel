@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Http\Request;
+use JetBrains\PhpStorm\ArrayShape;
 
 class OrderPostRequest extends Request
 {
@@ -21,7 +22,7 @@ class OrderPostRequest extends Request
      *
      * @return array
      */
-    public function rules(): array
+    #[ArrayShape(['name' => "string", 'email' => "string", 'mobile_number' => "string", 'message' => "string", 'kit' => "string", 'brakes' => "string", 'rim' => "string", 'battery' => "string"])] public function rules(): array
     {
         return [
             'name' => 'required|max:25|',
