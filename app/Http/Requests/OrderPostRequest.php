@@ -22,12 +22,22 @@ class OrderPostRequest extends Request
      *
      * @return array
      */
-    #[ArrayShape(['name' => "string", 'email' => "string", 'mobile_number' => "string", 'message' => "string", 'kit' => "string", 'brakes' => "string", 'rim' => "string", 'battery' => "string"])] public function rules(): array
+    #[ArrayShape([
+        'name' => "string",
+        'email' => "string",
+        'phonefield' => "string",
+        'message' => "string",
+        'kit' => "string",
+        'brakes' => "string",
+        'rim' => "string",
+        'battery' => "string"
+    ])] public function rules(): array
     {
         return [
             'name' => 'required|max:25|',
             'email' => 'required|email',
-            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}|(38)[0-9]{10}|(8)[0-9]{10}|[0-9]{10}$/',
+            'phonefield' => 'phone:UA',
+//            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}|(38)[0-9]{10}|(8)[0-9]{10}|[0-9]{10}$/',
 //            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}$/',
             'message' => 'max:255',
             'kit' => 'required|numeric|max:3',
@@ -43,8 +53,8 @@ class OrderPostRequest extends Request
             'name.required' => 'Имя обязательно',
             'email.required' => 'email обязателен',
             'email.email' => 'не правильный формат email',
-            'mobile_number.regex' => 'Только украинские номера',
-            'mobile_number.required' => 'Номер телефона обязательно'
+//            'mobile_number.regex' => 'Только украинские номера',
+//            'mobile_number.required' => 'Номер телефона обязательно'
         ];
     }
 }

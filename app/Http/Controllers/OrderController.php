@@ -11,19 +11,22 @@ use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-    public function __construct(private OrderPostRequest $request
-    )
-    {
-    }
+    private array $validated;
+
+//    public function __construct(private OrderPostRequest $request
+//    ) {
+//    }
+
     public function index(): View
     {
         return view('shop_partials.dia_make_order');
     }
-    #[NoReturn] public function create(): void
+
+    #[NoReturn] public function create(OrderPostRequest $request): void
     {
 //        $this->request->validated();
         echo '<pre>';
-//       $validated = $request->validate([
+//        $this->validated = $this->request->validate([
 //            'name' => 'required|max:25|',
 //            'email' => 'required|email',
 //            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}|(38)[0-9]{10}|(8)[0-9]{10}|[0-9]{10}$/',
@@ -34,7 +37,8 @@ class OrderController extends Controller
 //            'rim' => 'required|numeric|max:3',
 //            'battery' => 'required|numeric|max:10',
 //        ]);
-        var_dump($this->request->input());
+//        var_dump($this->request->input());
+        var_dump($request->validated());
 //        die;
 //        var_dump($validated);
         die;
