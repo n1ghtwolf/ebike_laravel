@@ -2,10 +2,11 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use JetBrains\PhpStorm\ArrayShape;
 
-class OrderPostRequest extends Request
+class OrderPostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -36,9 +37,9 @@ class OrderPostRequest extends Request
         return [
             'name' => 'required|max:25|',
             'email' => 'required|email',
-            'phonefield' => 'phone:UA',
+//            'phonefield' =>  ,
 //            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}|(38)[0-9]{10}|(8)[0-9]{10}|[0-9]{10}$/',
-//            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}$/',
+            'mobile_number' => 'required|regex:/^(\+38)[0-9]{10}$/',
             'message' => 'max:255',
             'kit' => 'required|numeric|max:3',
             'brakes' => 'required|numeric|max:3',

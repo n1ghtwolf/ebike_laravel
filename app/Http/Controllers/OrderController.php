@@ -13,19 +13,15 @@ class OrderController extends Controller
 {
     private array $validated;
 
-//    public function __construct(private OrderPostRequest $request
-//    ) {
-//    }
-
     public function index(): View
     {
         return view('shop_partials.dia_make_order');
     }
 
-    #[NoReturn] public function create(OrderPostRequest $request): void
+    #[NoReturn] public function create(OrderPostRequest $request, Order $order): void
     {
 //        $this->request->validated();
-        echo '<pre>';
+//        echo '<pre>';
 //        $this->validated = $this->request->validate([
 //            'name' => 'required|max:25|',
 //            'email' => 'required|email',
@@ -38,9 +34,11 @@ class OrderController extends Controller
 //            'battery' => 'required|numeric|max:10',
 //        ]);
 //        var_dump($this->request->input());
-        var_dump($request->validated());
+//        var_dump($request->validated());
+        $res = $order->fill($request->validated());
+        var_dump($res);
 //        die;
 //        var_dump($validated);
-        die;
+//        die;
     }
 }
