@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/about', 'inDevController@index')->name('about');
-Route::get('/contacts', 'inDevController@index')->name('contacts');
-Route::get('/delivery', 'inDevController@index')->name('delivery');
-Route::get('/faq', 'inDevController@index')->name('faq');
-Route::get('/delivery', 'inDevController@index')->name('blog');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/about', [inDevController::class, 'index'])->name('about');
+Route::get('/contacts', [inDevController::class, 'index'])->name('contacts');
+Route::get('/delivery', [inDevController::class, 'index'])->name('delivery');
+Route::get('/faq', [inDevController::class, 'index'])->name('faq');
+Route::get('/blog', [inDevController::class, 'index'])->name('blog');
 
 include_once "configurator/configurator.router.php";
 include_once "order/order.router.php";
