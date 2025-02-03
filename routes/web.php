@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\inDevController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,5 +39,6 @@ Route::get('/delivery', [inDevController::class, 'index'])->name('delivery');
 Route::get('/faq', [inDevController::class, 'index'])->name('faq');
 Route::get('/blog', [inDevController::class, 'index'])->name('blog');
 
+Route::get('/product/{id}', [ProductController::class, 'show']);
 include_once "configurator/configurator.router.php";
 include_once "order/order.router.php";
