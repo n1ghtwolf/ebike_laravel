@@ -12,8 +12,10 @@ class ConfiguratorController extends Controller
      */
     public function index(): View
     {
+        $types = \App\Models\ProductType::with('products')->get()->keyBy('name');
+
         return view('configurator', [
-            'products' => Product::all(),
+            'types' => $types,
         ]);
     }
 }
