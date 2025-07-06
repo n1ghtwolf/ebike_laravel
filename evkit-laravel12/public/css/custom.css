@@ -1,0 +1,38 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+/*
+ img input
+ https://codepen.io/DavidBradbury/pen/DoWQLW
+*/
+.input_img {
+    position: absolute;
+    left: -9999px;
+}
+.input_img + label {
+    display: inline-flex;
+}
+
+input[type=radio]:checked + label img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px #090;
+}
+
+input:disabled + label p.del-cross{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+input:disabled + label p.del-cross:before {
+    content:'';
+    position:absolute;
+    display:block;
+    width:auto;
+    height:auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0) url(del-cross.svg) no-repeat;
+    background-size:100% 100%; /* растягивает фон на всю ширину и высоту блока */
+}
