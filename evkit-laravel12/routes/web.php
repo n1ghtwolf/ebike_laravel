@@ -19,4 +19,5 @@ Route::controller(App\Http\Controllers\OrderController::class)
     ->group(function () {
         Route::get('/confirm', 'index')->name('order.confirm');
         Route::post('/create', 'create')->name('order.create');
+        Route::get('/form', 'form')->name('order.form');
     });
