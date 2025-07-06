@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home-content');
+})->name('home');
 
 // Configurator
 Route::controller(App\Http\Controllers\ConfiguratorController::class)
